@@ -34,7 +34,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex w-full max-w-3xl flex-col gap-8 px-8 py-16">
         <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
-          Right triangle solver
+          Right triangle solver: version ${process.env.NEXT_PUBLIC_COMMIT_SHA || 'UNKNOWN'}
         </h1>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -86,9 +86,8 @@ export default function Home() {
 
             {presenter.result && (
               <dl
-                className={`grid grid-cols-2 gap-x-4 gap-y-2 text-sm transition-opacity ${
-                  presenter.pending ? "opacity-50" : ""
-                }`}
+                className={`grid grid-cols-2 gap-x-4 gap-y-2 text-sm transition-opacity ${presenter.pending ? "opacity-50" : ""
+                  }`}
               >
                 <dt className="text-zinc-500 dark:text-zinc-400">Hypotenuse</dt>
                 <dd className="text-right font-mono text-black dark:text-zinc-50">
