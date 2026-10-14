@@ -6,4 +6,4 @@ allowBuilds:
   sharp: false
   unrs-resolver: false
 minimumReleaseAgeExclude:
-  - '@csikosbalint/webapp-platform-core@1.0.0'
+  - '@csikosbalint/webapp-platform-core@1.0.0 || 1.0.1'
