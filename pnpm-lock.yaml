@@ -22,8 +22,8 @@ importers:
   plugins/ui:
     dependencies:
       '@csikosbalint/webapp-platform-core':
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: workspace:*
+        version: link:../../core
       next:
         specifier: 16.3.5
         version: 16.3.5(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@20.19.43)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -165,9 +165,6 @@ packages:
   '@bramus/specificity@2.4.3':
     resolution: {integrity: sha512-0GEz8qJWokkUVYQYRukmkSHIFNoBH8QTreeHrAFbvz1XFYc3Y+puhMs8PQ5x8GNugiC2l5jvDBXKLbBIByeSBw==}
     hasBin: true
-
-  '@csikosbalint/webapp-platform-core@1.0.1':
-    resolution: {integrity: sha512-2+ShM3JIbcJrc6I16ZC05b7TOvYwMYRFGEEYWFGow7BLjXX8ZRqaPu3GGqu88w7bX2fd7ZZQnDgeshrMCg3unQ==, tarball: https://npm.pkg.github.com/download/@csikosbalint/webapp-platform-core/1.0.1/ed01b6d57ddf829d3970a07d9a31cb625d0b96e6}
 
   '@csstools/color-helpers@6.1.2':
     resolution: {integrity: sha512-grhRy3OKmniaAEKXMjua5z/EODX0MSqBGjunw8+j/3HQjOnahs2AGhvEOIYVUWcU6ScApbhLhVrQTX8XqrMrow==}
@@ -2747,10 +2744,6 @@ snapshots:
   '@bramus/specificity@2.4.3':
     dependencies:
       css-tree: 3.2.1
-
-  '@csikosbalint/webapp-platform-core@1.0.1':
-    dependencies:
-      awilix: 13.0.5
 
   '@csstools/color-helpers@6.1.2': {}
 
